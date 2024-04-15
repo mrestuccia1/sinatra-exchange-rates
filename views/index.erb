@@ -1,0 +1,5 @@
+<h1>Currency pairs</h1>
+
+<% @parsed.each do |key, value| %>
+  <a href=<%= "/#{key}" %>>Convert 1 <%= key %> to...</a><br>
+<% end %>

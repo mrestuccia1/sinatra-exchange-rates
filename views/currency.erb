@@ -1,0 +1,7 @@
+<h1>Convert <%= @original_currency %></h1>
+
+<% @parsed.each do |key, value| %>
+  <a href= <%= "/#{@original_currency}/#{key}" %>> Convert 1 <%= @original_currency %> to <%= key %>...</a><br>
+<% end %>
+
+<p>Go <a href="/">back</a>.</p>
